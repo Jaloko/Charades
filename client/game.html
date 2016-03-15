@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Interface</title>
+	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/global.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="nav-title">
+			<h1>Charades</h1>
+		</div>
+
+		<div class="nav-links">
+			<a href="/">About</a>
+			<a href="/public">Public Games</a>
+			<a href="/create">Create Game</a>
+		</div>
+
+	</div>
+	<div class="game-wrapper">
+		<div class="canvas-interface">
+			<canvas width="700" height="600">
+				Loading...
+			</canvas>
+		</div>
+
+		<div class="player-interface">
+			<div class="player-padding">					
+				<div class="timer">
+					<label>Time left:</label>
+					<div id="ten" class="ten">6</div>
+					<div id="one" class="one">0</div>
+				</div>
+
+				<p>
+					<strong>Drawing: </strong>
+					Player 1
+				</p>
+
+				<h3>Players:</h3>		
+				<p>Player 1 - 10 ips</p>
+				<p>Player 2 - 5 ips</p>
+				<p>Player 3 - 5 ips</p>
+				<p>Player 4 - 1 ips</p>
+
+				<h3>Submit Answer</h3>
+				<div class="answer">
+					<input type="text" placeholder="Wise Answer">
+
+					<a href="/submit">Submit</a>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+</body>
+</html>

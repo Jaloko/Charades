@@ -1,0 +1,215 @@
+/*------------------------------------------
+	Global.css
+------------------------------------------*/
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:#fbfcfc;
+	font-family: 'Coming Soon', cursive;
+}
+
+.answer input{
+	font-family: 'Coming Soon', cursive;
+}
+
+h1, h2,
+.games li,
+.form-group label{
+}
+
+h2{
+	margin-top: 12px;
+}
+
+p{
+	margin-bottom: 12px;
+}
+
+/*------------------------------------------
+	Navigation
+------------------------------------------*/
+.nav{
+	width:100%;
+	height: 80px;
+	background: #1f2029;
+
+	color: #fbfcfc;
+}
+
+.nav-links{
+	position:absolute;
+	right: 0;
+	width: auto;
+}
+.nav-title{
+	padding: 14px;
+}
+.nav-links{
+	padding:3px 6px;
+}
+
+.nav-title h1{
+	position: absolute;
+	left: 0;
+	width: auto;
+	color:#fff;
+	padding-left: 12px;
+}
+.nav-links a{
+	color:#fff;
+	font-size: 14pt;
+	padding-left: 24px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+/*------------------------------------------
+	Landing Page
+------------------------------------------*/
+.content{
+	position: relative;
+	margin: 12px auto;
+	padding:6px;
+	width: 700px;
+
+	border:1px solid #2c3e50;
+}
+/*------------------------------------------
+	Lists
+------------------------------------------*/
+.list {
+	list-style: none;
+}
+.list li{
+	padding:6px;
+	color: #fbfcfc;
+}
+
+.list li:nth-child(odd){
+	background: #34495e;
+}
+.list li:nth-child(even){
+	background:#2c3e50;
+}
+/*------------------------------------------
+	Lobby
+------------------------------------------*/
+.ready{
+	background:#27ae60;
+	color:#fbfcfc;
+	width: 100%;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.ready a{
+	padding: 3px;
+	font-size: 14pt;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+/*statuses*/
+.player-ready, .player-waiting, .player-open{
+	right: 0;
+	background: #fbfcfc;
+	font-weight: bolder;
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+}
+.player-ready{
+	color:#1abc9c;
+}
+.player-waiting{
+	color:#3498db;
+}
+.player-open{
+	color:#2c3e50;
+}
+
+.form-group{
+	margin-top:10px;
+}
+.form-group label{
+	font-weight: bold;
+}
+.word-categories {
+	list-style: none;
+}
+
+/*------------------------------------------
+	Game Interface
+------------------------------------------*/
+
+.game-wrapper{
+	position: absolute;
+	width: 100%;
+	margin-top: 12px;
+}
+
+.canvas-interface{
+	width: 80%;
+	float: left;
+	background: #bdc3c7;
+	text-align: center;
+	height: 700px;
+
+}
+.canvas-interface canvas{
+	background: #fff;
+
+}
+
+.player-interface{
+	left: 80%;
+	width: 20%;
+	height: 700px;
+	float: right;
+	background: #ecf0f1;
+}
+.player-padding{
+	padding: 12px;
+}
+
+.timer{
+	background: #1f2029;
+	color: #fbfcfc;
+	font-weight: bold;
+	font-size: 20pt;
+	height: auto;
+	margin-bottom: 10px;
+}
+.timer label{
+	padding: 12px;
+}
+
+.ten, .one{
+	background: #fbfcfc;
+	color: #1f2029;
+	padding:3px;
+	margin: 0;
+	width: 20px;
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+}
+
+.answer{
+	background: #fff;
+	height: 80px;
+	display: block;
+}
+
+.answer input{
+	font-size: 14pt;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	font-weight: bolder;
+	border:none;
+	outline: none;
+	border:1px solid #1f2029;
+}

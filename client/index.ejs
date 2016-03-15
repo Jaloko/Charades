@@ -30,7 +30,11 @@
 
 		<h2>Public Games</h2>
 		<ul class="list">
-			<li>Game 1 - <strong>4/6 players</strong></li>
+			<% for(var i = 0; i < games.length; i++) { %>
+
+			<li>Game <%= i %> - <strong><%= games[i].players.length %>/6 players</strong></li>
+
+			<% } %>
 		</ul>
 	</div>
 </body>

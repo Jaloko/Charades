@@ -17,8 +17,11 @@ app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname + '/client');
 app.set('view engine', 'ejs'); // set up templates
 
+
+var game = require('./server/game.js');
+game.games.push(new game.Game(game.generateId(game.games)));
 // Require the routes for the application, passes the app and passport objects
-require('./server/routes/routes.js')(app);
+require('./server/routes/routes.js')(app, game);
 
 app.listen(port);
 console.log("Server is up on " + port);

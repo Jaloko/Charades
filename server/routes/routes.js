@@ -1,6 +1,14 @@
-module.exports = function(app){
+module.exports = function(app, game){
 	app.get('/', function(req, res){
-		res.render('index.html');
+		var publicGames = Array();
+		for(var i = 0; i < game.games.length; i++) {
+			if(game.games[i].isPublic) {
+				publicGames.push(game.games[i]);
+			}
+		}
+		res.render('index.ejs', {
+			games: publicGames
+		});
 	});
 
 	app.get('/public', function(req, res){
